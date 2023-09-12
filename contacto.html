@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <script src="https://kit.fontawesome.com/f16f89dc17.js" crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="contenedor1">
+            <header>
+                <div class="primero">
+                    <a href="index.html"><img src="img/logo3.png"></a>
+                </div>
+                <div class="prueba3">
+                <div class="segundo">
+                    <div>
+                        <h1>Asociación española de Shuai Jiao</h1>
+                    </div>
+                    <div>
+                    </div>
+                </div> 
+                <div class="tercero">
+                    <span class="clase_conmutador conmutador" >
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                    <nav class="navegador">
+                        <ul class="ul_menu" id="ul_menu">
+                            <li><a href="index.html">Quienes somos</a></li>
+                            <li><a href="Multimedia2.html">Multimedia</a></li>
+
+
+                            <li class="li_desplegable">
+                        
+                                <a href="#">Federacion</a>
+                                <div class="div_desplegable">
+                                    <a href="ElPresidente.html">El presidente</a>
+                                    <a href="Reglamentacion.html">Reglamentación</a>
+                                </div>
+                            </li>
+                            <li><a class="activo" href="contacto.html">contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                </div>
+            </header>
+        </div> 
+    </div> 
+    <div class="espacio">&nbsp</div>
+    <div class="contenedor2">
+        <h2><span class="letra">C</span>ontacto</h2>
+
+       <section class="wrapper">
+            <article id="contacto">
+                
+                <div class="centrar">
+                <p class="donde">¿Dónde estamos?</p>   
+                    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1331.4274604268658!2d-2.6693151155556367!3d42.85370321495503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4fc25d351546b1%3A0xb7bdd4a5379df2d6!2sPortal%20de%20Legutiano%20Kalea%2C%205%2C%2001013%20Gasteiz%2C%20Araba!5e0!3m2!1ses!2ses!4v1681455868027!5m2!1ses!2ses"  width="80%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
+                </div>
+                    <div class="centrar">
+                        <div class="wrapper_texto_horario">
+                            <p class="texto_title">De lunes a sàbado</p>
+                            <p class="texto_horario">9h a 13h</p>
+                            <p class="texto_horario">17:30h a 20h</p>
+                            <p class="horario_domingo">Domingo - Cerrado </p>
+                        </div>
+                     </div>
+            
+            </article>
+            <article id="contacto_formulario">
+                <div>
+                    <p>Mediante este formulario haznos llegar tus propuestas y/o dudas para poder atenderte de una manera más personalizada:</p>
+                </div>
+                <div class="formulario">
+                    <form action="https://formsubmit.co/igorlamarainudemy@gmail.com" method="POST" name="formulario">
+                        <h2>Contacto</h2>
+                        <label><span>* </span>Nombre de usuario:</label>
+                        <input type="text" name="Nombre" id="nombre" placeholder="Nombre">
+                        <label><span>* </span>Email</label>
+                        <input type="email" name="correo" id="correo" class="correo" placeholder="correo">
+                        <label><span>* </span>Telefono</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Telefono">
+                        <label><span>* </span>Comentarios</label>
+                        <textarea name="mensaje" id="" placeholder="Escriba aqui su mensaje" cols="30" rows="10"></textarea>
+                        <input type="submit" value="ENVIAR" id="boton">
+                        <h3><span>* </span> Campos obligatorios</h3>
+                    </form>
+                </div>
+
+            </article>
+            <script>
+                let mail = document.getElementsByName("correo")[0];
+                let telefono= document.getElementById("telefono");
+                
+
+
+
+
+                /* window.addEventListener("load",function(){
+                    document.formulario.addEventListener("submit",validarFormulario);
+                });	*/
+
+
+            
+              
+                
+
+                function validar(){
+                    
+                    if((/^\w+@\w+\.\w{2,3}$/.test(mail.value))){
+                        document.getElementById("correo").style.backgroundColor = "white";  
+                    }else{
+                        document.getElementById("correo").style.backgroundColor = "red";
+                   
+                        }
+                    }
+                
+                function telefonoValidar(){    
+                    if(/^(6|8|9)[0-9]{8}$/.test(telefono.value)){
+                        document.getElementById("telefono").style.backgroundColor = "white";  
+                    }else{
+                        document.getElementById("telefono").style.backgroundColor = "red"; 
+                    }
+                } 
+
+                function nombreValidar(){
+                    let nombre= document.getElementById("nombre").value;
+                    if(nombre.length<=2){
+                        document.getElementById("nombre").style.backgroundColor = "red";
+                        
+             
+                    }else{
+                        document.getElementById("nombre").style.backgroundColor = "White"; 
+                    }
+                }   
+         
+                
+                document.getElementById("correo").addEventListener("change",validar);
+                document.getElementById("telefono").addEventListener("change",telefonoValidar);
+                document.getElementById("nombre").addEventListener("change",nombreValidar);
+
+          
+
+
+
+        // ESte es el script del menu para hamburguesa        
+        // let conmutador = document.getElementById("conmutador");
+        // let ulMenu= document.getElementById("ul_menu");
+
+        // function conmutar(){
+        //     ulMenu.classList.toggle("desplegado");
+            
+
+        // }
+       
+        conmutador.addEventListener("click",conmutar);
+        //Hasta aqui
+            </script>
+
+       </section> 
+    </div>
+    <div class="contenedor3">
+        <footer class="contenedor4">
+            <div class="direccion">
+                <p>Portal de legutiano, 5,bajo<br/>
+                    01002, Vitoria-Gasteiz<br/>
+                    Teléfono 747 49 59 38</p>
+            </div>
+            <div class="proyecto">
+                <div>
+                    <p>Igor Lamarain Montes 03/2023 Proyecto portafolio federacion de Shuai Jiao</p>
+                </div>
+                <div class="cookies">
+                    <a href="#">Privacidad</a>
+                 
+                 
+                    <a href="#">Politica Cookies</a>
+                 </div>
+            </div>
+            <div class="redes">
+                <a href="https://www.facebook.com/sandashuaijiaoeh/"> <img src="img/OIP.png"/></a>
+                <a href="https://www.instagram.com/shuaijiao_vitoria/"><img src="img/instagram.png"/></a>
+            </div>
+        </footer>
+    </div> 
+       
+        
+    <script src="js/script.js"></script>
+
+</body>
+</html>
