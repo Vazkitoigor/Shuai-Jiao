@@ -27,6 +27,10 @@ nav li a {
     display: inline-block;
 }
 
+/* nav li:hover {
+    background-color: #335; 
+} */
+
 .div_desplegable {
     position: absolute; 
     display: none;
@@ -38,6 +42,10 @@ nav li a {
     display: block;
 }
 
+/* .div_desplegable a:hover {
+    background-color: #FF914D;
+} 
+*/
 
 .li_desplegable:hover .div_desplegable {
     display: block;
@@ -48,6 +56,26 @@ nav li a {
     color: black;
     
 }
+
+/* @media  screen and (max-width:576px){
+    h1{
+        font-size: 30px;
+    }
+    .contenedor1 header{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .contenedor1 .segundo{
+        width: 100%;
+        display:flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+} */
+
+
 
 /*menu*/
 
@@ -101,8 +129,19 @@ nav li a {
         display:block;
     }
 
+
+
+
+
 /*menu amburguesa*/
-/* Estilos generales */
+
+
+
+
+
+
+
+
 .contenedor{
     max-width: 100%;
     margin: auto;
@@ -268,7 +307,10 @@ a{
 img{
     max-width: 100%;
 }
-/* Estilos generales */
+/* .tamaño_foto{
+    display:flex;
+    flex:0 1 25%;
+}  */
 /* Multimedia */
 .cuadrar{
 
@@ -401,6 +443,20 @@ img{
     margin:0;
 }
 
+
+
+
+
+
+
+
+/* Add animation (fade in the popup) */
+
+/* @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+} */
+/**/
 /* tamaño foto */
 .img_show_box{
     position: absolute;
@@ -698,7 +754,46 @@ h3{
     text-align: left;
     
 }
+/* @media  screen and (max-width:768px){
+    .primero{
+        display:none;
+    }
+    
+    .ul_menu{
+      display:flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      display: none;
+    }    
+    .contenedor{
+      position:static;
+    }
+    .espacio{
+      width: 0px;
+      height: 0px;
+      margin-bottom: -10px;
+    }
+    .contenedor2{
+      margin-top:  -20px;
+    }
+      .navegador{
+      display:none;
+    }
+      .clase_conmutador{
+        display:block;
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px 50px 20px 0px;
+        font-size: 30px;
 
+      }
+
+    }
+    .desplegado{
+        display:block;
+    } */
 
 /* formulario */
 @media  screen and (max-width:767px){
@@ -726,6 +821,9 @@ h3{
     }
 
 }
+
+
+
 
 
 /* contacto */
