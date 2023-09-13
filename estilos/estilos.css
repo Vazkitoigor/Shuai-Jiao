@@ -282,6 +282,10 @@ img{
     object-fit: cover;
 }
 
+
+
+
+
 #wrapper_imagenes{
     padding-bottom: 50px;
 }
@@ -458,6 +462,10 @@ img{
         position: absolute;
         margin-right:15em;
     }
+    .cuadrar img{
+        width: 250px;
+        
+    }
 
 }
 
@@ -473,7 +481,26 @@ img{
         position: absolute;
         margin-right:25em;
     }
+    .cuadrar img{
+        width: 400px;
+        
+    }
 } 
+/* @media  screen and (max-width:768px){
+    .cuadrar img{
+        width: 350px;
+        
+    }
+}
+
+@media  screen and (max-width:576px){
+    .cuadrar img{
+        width: 450px;
+       
+    }
+} */
+
+
 
  /* slider */  
 /* Multimedia */
